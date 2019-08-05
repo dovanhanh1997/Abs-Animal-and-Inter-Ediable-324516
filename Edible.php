@@ -1,4 +1,5 @@
 <?php
-interface Edible{
+interface Edible
+{
     public function howToEat();
 }

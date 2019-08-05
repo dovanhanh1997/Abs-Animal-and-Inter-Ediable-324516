@@ -4,26 +4,28 @@ include_once 'Chicken.php';
 include_once 'Apple.php';
 include_once 'Orange.php';
 
+echo '--Animal--<br>';
 $animals = [];
-$fruits = [];
-$tiger = new Tiger();
-$chicken = new Chicken();
-$animals[0] = $tiger;
-$animals[1] = $chicken;
+$animals[0]=new Tiger();
+$animals[1]= new Chicken();
 
-foreach ($animals as $animal):
-    echo $animal->makesound() . '<br>';
-    if ($animal instanceof Chicken) {
-        echo $animal->howToEat();
-    }
+foreach ($animals as $value):
+    echo $value->makeSound().'<br>';
+if ($value instanceof Chicken){
+    echo $value->howToEat().'<br>';
+}
 endforeach;
+?>
 
-echo '<br> --Fruit-- <br> ';
+<br><br>
 
-$apple = new Apple();
-$orange = new Orange();
-$fruits[0] = $apple;
-$fruits[1] = $orange;
+<?php
+echo '--Fruit--<br>';
+$fruits = [];
+$fruits[0]= new Apple();
+$fruits[1]= new Orange();
 
-foreach ($fruits as $fruit):
-    echo $fruit->howToEat() . '<br>'; endforeach;
+foreach ($fruits as $fruit) {
+    echo $fruit->howToEat().'<br>';
+}
+

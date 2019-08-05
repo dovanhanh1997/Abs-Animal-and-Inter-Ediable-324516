@@ -6,6 +6,6 @@ class Apple extends Fruit
 
     public function howToEat()
     {
-        return 'Apple could be Slide';
+        return 'Apple: Could be slide';
     }
 }

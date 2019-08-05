@@ -7,7 +7,7 @@ class Chicken extends Animal implements Edible
 
     public function makeSound()
     {
-        echo "Chicken: cuck cuck cuck !!!";
+        return 'Chicken: cuck cuck !!!' . '<br>';
     }
 
     public function howToEat()

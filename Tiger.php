@@ -6,6 +6,6 @@ class Tiger extends Animal
 
     public function makeSound()
     {
-        echo 'Tiger: raorrrrr !!!';
+        return 'Tiger: raorrrrrr' . '<br>';
     }
 }
