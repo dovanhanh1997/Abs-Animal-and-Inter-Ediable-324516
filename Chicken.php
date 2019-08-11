@@ -1,17 +1,15 @@
 <?php
-include_once 'Animal.php';
-include_once 'Edible.php';
 
 class Chicken extends Animal implements Edible
 {
 
-    public function makeSound()
+    function makeSound()
     {
-        return 'Chicken: cuck cuck !!!' . '<br>';
+        return 'Chicken: cook cook';
     }
 
     public function howToEat()
     {
-        return 'Could be fried';
+        return 'could be fride';
     }
 }

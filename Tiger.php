@@ -1,11 +1,10 @@
 <?php
-include_once 'Animal.php';
 
 class Tiger extends Animal
 {
 
-    public function makeSound()
+    function makeSound()
     {
-        return 'Tiger: raorrrrrr' . '<br>';
+        return 'Tiger: raorrr';
     }
 }
